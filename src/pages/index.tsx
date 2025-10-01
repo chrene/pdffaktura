@@ -8,7 +8,7 @@ const IndexPage: NextPage = () => {
       <Meta />
       <header className="mt-12 w-full lg:max-w-5xl mx-auto">
         <h1 className="text-2xl font-bold">
-          Opret nemt faktura PDF'er online med PDFFaktura.dk
+          Hej! Opret nemt faktura PDF'er online med PDFFaktura.dk
         </h1>
         <p className="mt-4 text-sm text-neutral/60 max-w-lg lg:max-w-2xl leading-relaxed">
           PDFFaktura.dk er det perfekte værktøj til at oprette og danne Faktura
