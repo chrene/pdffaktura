@@ -36,7 +36,7 @@ export const Button = (props: {
   );
 
   return (
-    <button className={classes} onClick={onClick} {...rest}>
+    <button className={classes} type={type} onClick={onClick} {...rest}>
       {children}
     </button>
   );
