@@ -58,7 +58,6 @@ export const CreateInvoiceForm = ({ dx }: CreateInvoiceFormProps) => {
 
   const handleFetchSenderCompany = async (e: any) => {
     e.preventDefault();
-    e.stopPropagation();
     const result = await getCompanyByVAT(getValues().sender.vat);
     reset({
       ...getValues(),
@@ -78,7 +77,6 @@ export const CreateInvoiceForm = ({ dx }: CreateInvoiceFormProps) => {
 
   const handleFetchReceiverCompany = async (e: any) => {
     e.preventDefault();
-    e.stopPropagation();
     const result = await getCompanyByVAT(getValues().receiver.vat);
     reset({
       ...getValues(),
@@ -100,7 +98,7 @@ export const CreateInvoiceForm = ({ dx }: CreateInvoiceFormProps) => {
     <form onSubmit={(e) => e.preventDefault()}>
       {dx?.enabled && (
         <button
-          className="btn btn-primary btn-outline fixed bottom-4 right-4"
+          className="btn btn-primary btn-outline btn fixed bottom-4 right-4"
           onClick={() => {
             const data = dxFactory.invoice.create();
             reset(data);
